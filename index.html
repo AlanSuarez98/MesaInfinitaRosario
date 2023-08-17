@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas Infinitas Rosario</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body id="home">
+    <nav>
+        <a href="#home">
+            <div id="logo">
+                <img src="assets/LogoMesaInfinitaWHITE.png" alt="LogoMesaInfinita">
+            </div>
+        </a>
+        <div id="listaNav">
+            <a href="#products">Productos</a>
+            <a href="#pedidos">¿Como realizar un pedido?</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <button id="btnMenu"><i class="fa-solid fa-bars fa-2x"></i></button>
+    </nav>
+    <div id="listaNavMovil">
+        <a href="#products">Productos</a>
+        <a href="#pedidos">¿Como realizar un pedido?</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <header>
+        <div id="logoHead">
+            <img src="assets/LogoMesaInfinitaWHITE.png" alt="logoGrande">
+        </div>
+        <div id="headIzq">
+            <img src="assets/EfectoInfinito.jpg" alt="fondo">
+        </div>
+    </header>
+    
+    <main>
+        <h2 id="titleProducts">Productos</h2>
+        <section id="products">
+                <div class="cardsProducts">
+                    <img src="assets/Mesas Infinitas/Mesa Machimbre 1.jpeg" alt="Mesa Machimbre">
+                    <div class="descriCards">
+                        <h2>Mesa Machimbre</h2>
+                        <h3 class="precio" id="precio"><span>$</span>60.000</h3>
+                        <div class="color" id="color"></div>
+                        <p>Mesa ratona efecto infinito</p>
+                        <button onclick="redirigirMachimbre();">+Info</button>
+                    </div>
+                </div>
+                <div class="cardsProducts">
+                    <img src="assets/Mesas Infinitas/Mesa Madera 1.jpeg" alt="Mesa Madera">
+                    <div class="descriCards">
+                        <h2>Mesa Madera</h2>
+                        <h3 class="precio" id="precio"><span>$</span>60.000</h3>
+                        <div class="color" id="color"></div>
+                        <p>Mesa ratona efecto infinito</p>
+                        <button onclick="redirigirMadera();">+Info</button>
+                    </div>
+                </div>
+                <div class="cardsProducts">
+                    <img src="assets/Mesas Infinitas/Mesa Peluche 1.jpeg" alt="Mesa Peluche">
+                    <div class="descriCards">
+                        <h2>Mesa Peluche</h2>
+                        <h3 class="precio" id="precio"><span>$</span>60.000</h3>
+                        <div class="color" id="color"></div>
+                        <p>Mesa ratona efecto infinito</p>
+                        <button onclick="redirigirPeluche();">+Info</button>
+                    </div>
+                </div>
+                <div class="cardsProducts">
+                    <img src="assets/Mesas Infinitas/Mesa Rustica 1.jpeg" alt="Mesa Machimbre">
+                    <div class="descriCards">
+                        <h2>Mesa Machimbre</h2>
+                        <h3 class="precio" id="precio"><span>$</span>60.000</h3>
+                        <div class="color" id="color"></div>
+                        <p>Mesa ratona efecto infinito</p>
+                        <button onclick="redirigirRustica();">+Info</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="pedidos">
+            <img src="assets/carpinteria.jpg">
+            <div id="overlay"></div>
+            <div id="textPedidos">
+                <h2>¿Como realizo un pedido?</h2>
+                <p>▪ Seleccione su modelo de mesa <br>
+                ▪ Su iluminación interna <br>
+                ▪ Si desea colocarle ruedas para mejor movilidad o colocarle patas fijas <br>
+                ▪ Seleccione color exterior (Solo en algunos modelos) <br> 
+                ▪ Seleccione el diseño exterior (Solo en algunos modelos)
+                </p>
+                <button onclick="redirigirRealizarPedido();">Realizar Pedido</button>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <img src="assets/contacto.webp">
+            <div id="overlayContact"></div>
+            <h2>Contacto</h2>
+            <div id="contenedorForm">
+                <form id="form">
+                    <input type="text" placeholder="Nombre y Apellido" name="from_name" id="from_name">
+                    <input type="text" placeholder="Email" name="email_id" id="email_id">
+                    <select name="from_models" id="from_models">
+                        <option value="vacio">Seleccione un modelo</option>
+                        <option value="Machimbre">Mesa Machimbre</option>
+                        <option value="Madera">Mesa Madera</option>
+                        <option value="Peluche">Mesa Peluche</option>
+                        <option value="Rustica">Mesa Rustica</option>
+                        <option value="Minimalista">Mesa Minimalista</option>
+                    </select>
+                    <textarea name="from_message" id="from_message" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+                    <div id="btnForm">
+                        <button type="reset">Limpiar</button>
+                        <input type="submit" id="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div id="contenedorIcons">
+                <a onclick="redirigirIG();" style="cursor: pointer;"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a onclick="redirigirContacto();" style="cursor: pointer;"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </div>
+            <h4 id="copy">©Todos los derechos reservados <span id="año-actual"></span></h4>
+        </section>
+        <a onclick="redirigirContacto();" id="whatsapp" style="cursor: pointer;"><i class="fa-solid fa-phone fa-2x"></i></a>
+    </main>
+    
+</body>
+<script src="js/index.js" defer></script>
+<script src="js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    emailjs.init('t2JekgoA8uNM1zhEz')
+</script>
+</html>

@@ -1,0 +1,3125 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Agency FB', arial;
+}
+h1{
+    cursor: default;
+}
+h2{
+    cursor: default;
+}
+h3{
+    cursor: default;
+}
+h4{
+    cursor: default;
+}
+h5{
+    cursor: default;
+}
+h6{
+    cursor: default;
+}
+p{
+    cursor: default;
+}
+a{
+    cursor: pointer;
+}
+@media (min-width: 426px) and (max-width: 645px){
+    #textPedidos p{
+        margin: 10px 0 0 0;
+    }
+    #textPedidos button{
+        margin: 25px 0 0 0;
+    }
+}
+@media (min-width: 376px) and (max-width: 392px){
+    #textPedidos h2{
+        font-size: 32px;
+        margin: 25px 0 0 0;
+    }
+    #textPedidos p{
+        margin: 10px 0 0 0 !important;
+        font-size: 24px !important;
+    }
+    #textPedidos button{
+        margin: 15px 0 0 0 !important;
+    }
+    #products{
+        grid-template-columns: repeat(1, 392px) !important;
+
+    }
+    .cardsProducts{
+        width: 350px !important;
+    }
+    
+}
+@media (min-width: 0px) and (max-width: 220px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    
+    #logo img{
+        width: 100%;
+    }
+    #listaNavMovil{
+        position: fixed;
+        top: 65px;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: 0px;
+        height: 150px;
+        z-index: 998;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    #listaNavMovil a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    #listaNavMovil a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+
+    #listaNav{
+        padding: 20px;
+        display: none;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+        display: none;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 2300px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        gap: 5px;
+        padding: 15px;
+
+    }
+    .cardsProducts{
+        justify-self: center;
+        overflow: hidden;
+        width: 175px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 1025px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 659px;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 659px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 32px;
+        margin: 25px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 18px;
+        width: 80%;
+        margin: 10px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 10px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        background-color: transparent;
+        border: none;
+        color: white;
+        margin: 0 15px 0 0;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu:hover{
+        text-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+}
+@media (min-width: 221px) and (max-width: 320px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNavMovil{
+        position: fixed;
+        top: 65px;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: 0px;
+        height: 150px;
+        z-index: 998;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    #listaNavMovil a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    #listaNavMovil a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+
+    #listaNav{
+        padding: 20px;
+        display: none;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+        display: none;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 2300px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        gap: 5px;
+        padding: 15px;
+
+    }
+    .cardsProducts{
+        justify-self: center;
+        overflow: hidden;
+        width: 275px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 1025px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 659px;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 659px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 32px;
+        margin: 45px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 20px;
+        width: 80%;
+        margin: 10px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 20px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        background-color: transparent;
+        border: none;
+        color: white;
+        margin: 0 15px 0 0;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu:hover{
+        text-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNavMovil{
+        position: fixed;
+        top: 65px;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: 0px;
+        height: 150px;
+        z-index: 998;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    #listaNavMovil a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    #listaNavMovil a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+
+    #listaNav{
+        padding: 20px;
+        display: none;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+        display: none;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 2300px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        gap: 5px;
+        padding: 15px;
+
+    }
+    .cardsProducts{
+        justify-self: center;
+        overflow: hidden;
+        width: 350px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 1025px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 659px;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 659px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 32px;
+        margin: 25px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 20px;
+        width: 80%;
+        margin: 10px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 25px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        background-color: transparent;
+        border: none;
+        color: white;
+        margin: 0 15px 0 0;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu:hover{
+        text-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNavMovil{
+        position: fixed;
+        top: 65px;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: 0px;
+        height: 150px;
+        z-index: 998;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    #listaNavMovil a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    #listaNavMovil a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+
+    #listaNav{
+        padding: 20px;
+        display: none;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+        display: none;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 2300px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 425px);
+        gap: 5px;
+        padding: 15px;
+        justify-content: center;
+
+    }
+    .cardsProducts{
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 1025px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 659px;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 659px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 32px;
+        margin: 45px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 20px;
+        width: 80%;
+        margin: 25px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 50px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        background-color: transparent;
+        border: none;
+        color: white;
+        margin: 0 15px 0 0;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu:hover{
+        text-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+@media (min-width: 426px) and (max-width: 768px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNav{
+        padding: 20px;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 2300px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 425px);
+        gap: 5px;
+        padding: 15px;
+        justify-content: center;
+
+    }
+    .cardsProducts{
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 1025px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 659px;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 659px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 45px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 28px;
+        margin: 100px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 100px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1600px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        display: none;
+    }
+    #listaNavMovil{
+        display: none;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNav{
+        padding: 20px;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 1997px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        gap: 5px;
+        padding: 15px;
+        justify-content: center;
+
+    }
+    .cardsProducts{
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 659px;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 659px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 45px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 28px;
+        margin: 100px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 100px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1300px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        display: none;
+    }
+    #listaNavMovil{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNav{
+        padding: 20px;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 1997px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        gap: 5px;
+        padding: 15px;
+        justify-content: center;
+
+    }
+    .cardsProducts{
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 722px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 45px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 28px;
+        margin: 100px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 100px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1300px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        display: none;
+    }
+    #listaNavMovil{
+        display: none;
+    }
+}
+@media (min-width: 1441px) and (max-width: 2560px){
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        background-color: rgba(43, 43, 43, 0.300);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    #logo{
+        width: 75px;
+        padding: 10px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #listaNav{
+        padding: 20px;
+    }
+    #listaNav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25% 10px; 
+    }
+    #listaNav a:hover{
+        background-color: rgba(218, 165, 32, 0.800);
+        transition: 0.3s ease-in-out;
+    }
+    header{
+        width: 100%;
+        height: 659px;
+        background-color: black;
+        overflow: hidden;
+    }
+    #logoHead{
+        width: 50%;
+        height: 659px;
+        display: flex;
+        align-items: center;
+    }
+    #logoHead img{
+        width: 100%;
+    }
+    #headIzq{
+        position: relative;
+        top: -659px;
+        right: -50%;
+        width: 50%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #headIzq img{
+        width: 100%;
+        height: 100%;
+        filter: blur(0.8px);
+    }
+
+    main{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 1997px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleProducts{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    #products{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        gap: 5px;
+        padding: 15px;
+        justify-content: center;
+
+    }
+    .cardsProducts{
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        background-color: rgb(219, 218, 218);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    .cardsProducts img{
+        width: 150px;
+        height: 200px;
+    }
+    .descriCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .descriCards h2{
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .descriCards p{
+        margin: 5px 0;
+    }
+    .precio{
+        margin: 5px 0;
+    }
+    .precio span{
+        font-weight: bold;
+    }
+    .descriCards button{
+        padding: 2px 25px;
+        font-size: 20px;
+        margin: 5px 0;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.300);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .descriCards button:hover{
+        box-shadow: 2px 3px 3px rgba(43, 43, 43, 0.300);
+        transition: 0.2s ease-in-out;
+    }
+    #pedidos{
+        position: absolute;
+        top: 659px;
+        width: 100%;
+        height: 659px;
+        overflow: hidden;
+    }
+    #pedidos img{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        filter: blur(1.4px);
+    }
+    #overlay{
+        width: 100%;
+        height: 722px;
+        background-color: rgb(43, 43, 43);
+        position: absolute;
+        top: 0px;
+        opacity: 50%;
+    }
+    #textPedidos{
+        width: 100%;
+        height: 722px;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textPedidos h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 45px;
+        margin: 45px 0 0 0;
+        color: white;
+    }
+    #textPedidos p{
+        text-align: start;
+        font-size: 28px;
+        margin: 100px 0 0 0;
+        color: white;
+    }
+    #textPedidos button{
+        margin: 100px 0 0 0;
+        font-size: 24px;
+        padding: 5px 35px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #textPedidos button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contacto{
+        position: absolute;
+        top: 1300px;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    #contacto img{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.4px);
+    }
+    #overlayContact{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        top: -705px;
+        opacity: 50%;
+    }
+    #contacto h2{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 50px;
+        margin: 45px 0 0 0;
+        color: white;
+        position: relative;
+        top: -1400px;
+    }
+    #contenedorForm{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -1350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #email_id{
+        width: 300px;
+        height: 28px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+    #from_models{
+        width: 150px;
+        height: 28px;
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        align-self: center;
+    }
+    #from_message{
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px 0;
+        resize: none;
+    }
+    #btnForm{
+        display: flex;
+        justify-content: center;
+    }
+    #btnForm button{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm button:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input{
+        padding: 5px 15px;
+        margin: 0 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    #btnForm input:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    #contenedorIcons{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1250px;
+    }
+    #contenedorIcons a{
+        color: white;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.2s ease-in-out;
+    }
+    #copy{
+        color: white;
+        position: relative;
+        top: -1215px;
+        width: 100%;
+        text-align: center;
+        opacity: 50%;
+    }
+    #whatsapp{
+        font-size: 16px;
+        color: #25D366;
+        padding: 10px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 999px;
+        border: 2px solid #25D366;
+        transition: 0.2s ease-in-out;
+    }
+    #whatsapp:hover{
+        background-color: #25D366;
+        color: white;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+    }
+    #btnMenu{
+        display: none;
+    }
+    #listaNavMovil{
+        display: none;
+    }
+}
+
