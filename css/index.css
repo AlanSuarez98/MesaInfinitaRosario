@@ -134,23 +134,20 @@ a{
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
         display: none;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        display: flex !important;
+        position: absolute;
+        width: 100% !important;
+        height: 405px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
@@ -537,23 +534,20 @@ a{
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
         display: none;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        display: flex !important;
+        position: absolute;
+        width: 100% !important;
+        height: 405px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
@@ -940,23 +934,20 @@ a{
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
         display: none;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        display: flex !important;
+        position: absolute;
+        width: 100% !important;
+        height: 405px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
@@ -1342,23 +1333,20 @@ a{
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
         display: none;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        display: flex !important;
+        position: absolute;
+        width: 100% !important;
+        height: 405px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
@@ -1710,26 +1698,24 @@ a{
         overflow: hidden;
     }
     #logoHead{
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
-    }
-    #headIzq img{
-        width: 100%;
+        display: none;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        display: flex !important;
+        position: absolute;
+        width: 100% !important;
+        height: 405px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
@@ -2075,26 +2061,22 @@ a{
         overflow: hidden;
     }
     #logoHead{
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        position: absolute;
+        width: 425px !important;
+        height: 405px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
@@ -2439,28 +2421,23 @@ a{
         overflow: hidden;
     }
     #logoHead{
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
     }
-
+    #logoPage{
+        position: absolute;
+        width: 475px !important;
+        height: 450px !important;
+        justify-self: center;
+        align-self: center;
+    }
     main{
         position: absolute;
         top: 659px;
@@ -2801,26 +2778,22 @@ a{
         overflow: hidden;
     }
     #logoHead{
-        width: 50%;
-        height: 659px;
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #logoHead img{
         width: 100%;
-    }
-    #headIzq{
-        position: relative;
-        top: -659px;
-        right: -50%;
-        width: 50%;
-        height: 659px;
-        overflow: hidden;
-    }
-    #headIzq img{
-        width: 100%;
         height: 100%;
-        filter: blur(0.8px);
+    }
+    #logoPage{
+        position: absolute;
+        width: 525px !important;
+        height: 500px !important;
+        justify-self: center;
+        align-self: center;
     }
 
     main{
