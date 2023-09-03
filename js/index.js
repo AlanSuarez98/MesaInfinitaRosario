@@ -2,7 +2,7 @@ var año = document.getElementById("año-actual");
 año.innerHTML = new Date().getFullYear();
 
 var btnMenu = document.getElementById("btnMenu");
-var menu = document.getElementById("listaNavMovil");
+var menu = document.getElementById("listNavMovil");
 
 btnMenu.addEventListener("click", () => {
   if (menu.style.visibility === "hidden") {
