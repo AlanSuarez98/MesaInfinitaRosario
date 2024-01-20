@@ -14,18 +14,10 @@ btnMenu.addEventListener("click", () => {
 
 function redirigirRealizarPedido() {
   // URL de la página de destino
-  const urlDestino =
-    "https://wa.me/543412143089?text=Hola,%20quiero%20realizar%20un%20pedido!";
-
-  // Redirigir a la página de destino en una nueva pestaña o ventana
-  window.open(urlDestino, "_blank");
+  alert("Método de contacto dado de baja");
 }
 function redirigirContacto() {
-  // URL de la página de destino
-  const urlDestino = "https://wa.me/543412143089"; // Reemplaza con la URL de tu página de destino
-
-  // Redirigir a la página de destino en una nueva pestaña o ventana
-  window.open(urlDestino, "_blank");
+  alert("Método de contacto dado de baja");
 }
 function redirigirIG() {
   // URL de la página de destino
