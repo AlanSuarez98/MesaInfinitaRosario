@@ -54,7 +54,8 @@ function redirigirRustica() {
   // Redirigir a la página de destino en la misma pestaña
   window.location.href = urlDestino;
 }
-
+/*
+#######CODIGO COMENTADO POR CONTACTO DADO DE BAJA########
 const btn = document.getElementById("button");
 
 document.getElementById("form").addEventListener("submit", function (event) {
@@ -75,3 +76,4 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
   );
 });
+*/
